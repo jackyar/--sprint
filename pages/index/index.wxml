@@ -1,0 +1,82 @@
+<!--index.wxml-->
+<view class="container">
+  <image class='background' src="../../img/bg.png"></image>
+  <view class="content">
+    <view class="userBarContent">
+      <view class="content-top">
+        <image class="setting-icon" src="../../img/setting.png"></image>
+        <image class="book-bg-icon" src="../../img/book_bg.png"></image>
+        <view class="user">
+          <!-- 展示用户信息（头像、昵称） -->
+          <view class="userinfo-avatar">
+            <open-data type="userAvatarUrl"></open-data>
+          </view>
+          <view class="userinfo-nickname">
+            <text>ID: </text>
+            <open-data type="userNickName"></open-data>
+          </view>
+        </view>
+      </view>
+      <view class="content-bottom">
+        <view class="icon-wrap" bindtap="showStuInfoBtn">
+          <image class="icon" src="../../img/userinfo.png"></image>
+          <view>个人信息</view>
+        </view>
+        <view class="split-solid"></view>
+        <view class="icon-wrap" bindtap="scanCode">
+          <image class="icon scan" src="../../img/scan_code.png"></image>
+          <view>扫码借书</view>
+        </view>
+        <view class="stu-id" bindtap="showDialogBtn">学号绑定</view>
+
+        
+      </view>
+    </view>
+    <view class="queryBtn" bindtap="queryBtn">借阅查询</view>
+    <view class="bookInfoBtn" bindtap="bookInfoBtn">生成年度账单</view>
+  </view>
+<!-- ============== -->
+
+<!-- 自定义弹窗: 学号绑定 bindtap="hideModal"-->
+<view class="modal-mask" catchtouchmove="true" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+    <view class="modal-title">学号绑定</view>
+    <view class="modal-content">
+        <view class="modal-input">
+            <input placeholder-class="input-holder" type="number" maxlength="10" bindinput="inputChange" class="input" placeholder="请输入学号" value="{{stuNo}}" maxlength="9"></input>
+        </view>
+    </view>
+    <view class="modal-footer">
+        <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+        <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">确定</view>
+    </view>
+</view>
+<!-- 自定义弹窗 -->
+<!-- =============================================== -->
+
+<!-- 自定义弹窗: 个人信息 -->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="true" wx:if="{{showStuInfo}}"></view>
+<view class="modal-dialog userinfo-modal-dialog" wx:if="{{showStuInfo}}">
+    <view class="modal-title info-modal-title">
+      <view class="info-icon-wrap">
+        <icon type="info" color="#729be3"></icon>
+      </view>
+      <view class="info-title">个人信息</view>
+    </view>
+
+    <view class="userinfo-content">
+        <view class="info-wrap"><view class="info-key">
+        学号: </view><text>{{stuNo}}</text></view>
+        <view class="info-wrap"><view class="info-key">
+        姓名: </view><text>张三</text></view>
+        <view class="info-wrap"><view class="info-key">
+        年级: </view><text>2018级</text></view>
+        <view class="info-wrap"><view class="info-key">
+        专业: </view><text>综合实验班</text></view>
+        <view class="info-wrap"><view class="info-key">
+        系别: </view><text>经济管理系</text></view>
+    </view>
+</view>
+
+<!-- 自定义弹窗 -->
+</view>

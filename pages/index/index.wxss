@@ -1,0 +1,284 @@
+.background {
+    width:100%;
+    height:100%;
+    z-index: -100;
+    position:absolute;
+}
+
+.content {
+  width: 100%;
+  height: 320rpx;
+  background-color: #729be3;
+  margin-top: 75rpx;
+}
+
+.userBarContent {
+  width: 670rpx;
+  height: 300rpx;
+  border-radius: 30rpx;
+  background-color: white;
+  margin: auto;
+  position: relative;
+  top: 60rpx;
+}
+
+.queryBtn{
+  width: 390rpx;
+  height: 132rpx;
+  margin: 460rpx auto 0;
+  background-color: #729be3;
+  /* border: solid 2rpx red; */
+}
+
+.bookInfoBtn {
+  width: 390rpx;
+  height: 132rpx;
+  margin: 60rpx auto;
+  background-color: #f7b00a;
+}
+
+.queryBtn, .bookInfoBtn {
+  border-radius: 70rpx;
+  text-align: center;
+  font-size: 20px;
+  line-height: 3.2em;
+}
+.content-top {
+  width: 670rpx;
+  height: 185rpx;
+  /* border: solid 1rpx red; */
+}
+
+.content-bottom {
+  width: 670rpx;
+  height: 120rpx;
+  padding-left: 23rpx;
+  /* border: solid 1rpx green; */
+}
+
+.user {
+  width: 280rpx;
+  height: 164rpx;
+  margin-right: 34rpx;
+  float: right;
+  /* border: solid 1rpx green; */
+}
+
+.setting-icon {
+  width: 48rpx;
+  height: 48rpx;
+  float: right;
+  margin: 18rpx 18rpx;
+}
+
+.book-bg-icon {
+  width: 154rpx;
+  height: 154rpx;
+  margin-top: 12rpx;
+  margin-right: 54rpx;
+  float: right;
+}
+
+.icon-wrap {
+  width: 170rpx;
+  height: 100rpx;
+  margin-top: 6rpx;
+  float: left;
+  text-align: center;
+  font-size: 0.6rem;
+  /* border: solid 1rpx red; */
+}
+
+.icon {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.scan {
+  width: 35rpx;
+  height: 35rpx;
+  margin-top: 10rpx;
+  margin-bottom: 8rpx;
+}
+
+.split-solid {
+  height: 36rpx;
+  margin-top: 18rpx;
+  float: left;
+  border-left: solid 1rpx #BBBBBB;
+}
+
+.stu-id {
+  width: 186rpx;
+  height: 75rpx;
+  margin-top: 17rpx;
+  margin-left: 48rpx;
+  float: left;
+  border-radius: 16rpx;
+  background-color: #fb989e;
+  text-align: center;
+  line-height: 75rpx;
+}
+
+.userinfo-avatar {
+  overflow: hidden;
+  width: 128rpx;
+  height: 128rpx;
+  margin-top: -42rpx;
+  margin-left: 68rpx;
+  /* margin: 20rpx; */
+  border-radius: 50%;
+  /* border: solid 1rpx red; */
+}
+.userinfo-nickname {
+  width: 264rpx;
+  height: 50rpx;
+  margin-left: 12rpx;
+  margin-top: 25rpx;
+  padding-left: 12rpx;
+  /* border: solid 1rpx red; */
+}
+
+text {
+  color: #B7B6B6;
+}
+
+/* 自定义弹窗样式 */
+.modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 9000;
+  color: #fff;
+}
+
+.modal-dialog {
+  width: 540rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 9999;
+  background: white;
+  margin: -180rpx 105rpx;
+  border-radius: 30rpx;
+}
+
+.modal-title {
+  padding-top: 50rpx;
+  font-size: 40rpx;
+  color: #030303;
+  text-align: center;
+}
+
+.modal-content {
+  padding-left: 32rpx;
+  padding-right: 32rpx;
+  padding-top: 60rpx;
+  padding-bottom: 70rpx;
+}
+
+.modal-input {
+  display: flex;
+  background: #F7F7F9;
+  border: 2rpx solid #ddd;
+  border-radius: 50rpx;
+  font-size: 35rpx;
+}
+
+.input {
+  width: 100%;
+  height: 82rpx;
+  font-size: 35rpx;
+  line-height: 35rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  color: #333;
+  
+}
+
+input-holder {
+  color: #666;
+  font-size: 35rpx;
+}
+
+.modal-footer {
+  display: flex;
+  flex-direction: row;
+  width: 540rpx;
+  height: 94rpx;
+  font-size: 34rpx;
+}
+
+.btn-cancel, .btn-confirm {
+  width: 145rpx;
+  height: 68rpx;
+  border-radius: 40rpx;
+  text-align: center;
+  line-height: 68rpx;
+  margin-top: -5rpx;
+}
+
+.btn-cancel {
+  margin-left: 74rpx;
+  background-color: #7ccd7d;
+  /* border: solid 1rpx green; */
+}
+
+.btn-confirm {  
+  margin-left: 100rpx;
+  background-color: #729BE3;
+  /* border: solid 1rpx green; */
+}
+/* 自定义弹窗样式 */
+
+.userinfo-content{
+  width: 540rpx;
+  height: 340rpx;
+  margin-top: 36rpx;
+  margin-bottom: 12rpx;
+  padding-bottom: 20rpx;
+  /* border: solid 1rpx green; */
+}
+
+.userinfo-modal-dialog {
+  margin-top: -240rpx;
+}
+
+.info-wrap {
+  width: 300rpx;
+  margin-bottom: 30rpx;
+  margin-left: 60rpx;
+}
+
+.info-key {
+  margin-right: 10rpx;
+  letter-spacing: 5rpx;
+  display: inline-block;
+}
+
+.info-modal-title {
+  width: 100%;
+  height: 40rpx;
+  display: flex;
+  align-items: center;
+}
+
+.info-icon-wrap{
+  width: 40rpx;
+  height: 40rpx;
+  display: inline-block;
+  margin-right: 18rpx;
+  margin-left: 148rpx;
+}
+
+.info-title {
+  display: inline-block;
+}
+
+

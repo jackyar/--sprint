@@ -1,0 +1,52 @@
+<!--pages/show1/show1.wxml-->
+
+<view class="swiper-cont container-fill"> 
+  <view class="scroll-fullpage" bindtouchstart="scrollTouchstart" bindtouchend="scrollTouchend" style="transform:translateY(-{{scrollindex*100}}%);margin-top: {{margintop}}px"> 
+  <!-- 第一页 -->
+    <view class="section section01 {{scrollindex==0?'active':''}}" style='background-image:url({{image}})'> 
+      <view class='cont'>
+        <view class='cont-body'>
+          <image  src="/img/down.png" class="animate-bounce-down"></image>
+          <image src="/img/down.png" class="animate-bounce-down"></image>
+          <!-- <view class="animate-bounce-down"></view>
+          <view class="animate-bounce-down"></view> -->
+        </view>
+      </view>
+    </view> 
+  <!-- 第二页 -->
+    <view class="section section02 {{scrollindex==1?'active':''}}" style='background-image:url({{photo[0].bg_1}})'> 
+      <view class='cont'>
+        <view class='cont-body'>
+          <view></view>
+        </view>
+      </view>
+    </view> 
+  <!-- 第三页 -->
+    <view class="section section03 {{scrollindex==2?'active':''}}" style='background-image:url({{photo[0].bg_4}})'>  
+      <view class='cont'>
+        <view class='cont-body'>
+          <view></view>
+        </view>
+      </view>
+    </view>
+  <!-- 第四页 -->
+    <view class="section section04 {{scrollindex==3?'active':''}}" style='background-image:url({{photo[0].bg_3}})'> 
+      <view class='cont'>
+        <view class='cont-body'>
+          <view></view>
+        </view>
+      </view>
+    </view>
+  </view> 
+</view> 
+
+
+
+
+
+
+<!-- <view class="container">
+  <view wx:if='{{image}}' style="background-image:url({{image}})" class="content">
+    <button bindtap="test"></button>
+  </view>
+</view> -->

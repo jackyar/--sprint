@@ -1,0 +1,85 @@
+<view class="container container-fill">
+  <view class="show-iconView">
+      <image src="/img/bg_music0.png" class="show-iconImage" animation="{{animation}}" mode="scaleToFill"></image>
+  </view>
+  <view hidden="{{scrollindex == 5}}" class="show-arrow">
+    <image  src="/img/down-fff.png" class="animate-bounce-down"></image>
+    <image src="/img/down-fff.png" class="animate-bounce-down"></image>
+  </view>
+  <!-- <audio id="myAudio" src="http://www.xxx.com/broken.mp3" loop="false" ></audio> -->
+ <view class="scroll-fullpage" bindtouchstart="scrollTouchstart" bindtouchmove="scrollTouchmove" bindtouchend="scrollTouchend" style="transform:translateY(-{{scrollindex*100}}%);margin-top: {{margintop}}px">
+ <!-- tab1 -->
+ <view class="section section01 {{scrollindex==0?'active':''}}" style="background: #3399FF;">
+ <text class="section-maintitle">SUMMARY OF 2020</text>
+ <text class="section-subtitle">同学，<text class="sty1">你好！</text></text>
+ <text class="section-subtitle">在一年的时光里</text>
+ <text class="section-subtitle">你一共借阅书籍<text class="sty2">X</text>本</text>
+ <block wx:if="{{1 == 2}}">
+  <text class="section-subtitle">乌云闭月，人际踪绝</text>
+  <text class="section-subtitle">说不出如斯寂寞</text>
+ </block>
+ <block wx:if="{{1 == 1}}">
+  <text class="section-subtitle">寻静谧幽林</text>
+  <text class="section-subtitle">读圣贤之书，解人生百惑</text>
+ </block>
+ </view>
+ <!-- tab2 -->
+ <view class="section section02 {{scrollindex==1?'active':''}}" style="background: #00CC66;">
+ <text class="section-maintitle-1">今人不见古时月</text>
+ <text class="section-subtitle-1">今月曾经照古人</text>
+ <text class="section-subtitle"><text class="sty3">本馆外借图书<text class="sty2">13706</text>本</text></text>
+ <text class="section-subtitle">累计借阅<text class="sty2">37553</text>次</text>
+ <text class="section-subtitle">其中<text class="sty4">《平凡的世界》《活着》
+ 《红树林》《巴黎圣母院》《儒林外史》</text>备受读者喜爱</text>
+ </view>
+ <!-- tab3 -->
+ <view class="section section03 {{scrollindex==2?'active':''}}" style="background: #33CCCC;">
+  <text class="section-maintitle">2020·十一月</text>
+  <text class="section-subtitle">图书借阅<text class="sty2">10149</text>次</text>
+  <text class="section-subtitle">同时延期续借<text class="sty4">118</text>次</text>
+  <text class="section-subtitle">是一个<text class="sty1">热衷阅读</text>的月份</text>
+  <image src="/img/pd.png" class="table"></image>
+ </view>
+ <!-- tab4 -->
+ <view class="section section04 {{scrollindex==3?'active':''}}" style="background: #6699FF;">
+ <text class="section-maintitle">各<text class="sty5">系</text>借阅量排行<text class="sty6">TOP5</text></text>
+ <text class="section-subtitle">《经济管理系》<text class="sty2">6348</text></text>
+ <text class="section-subtitle">《传播与艺术系》<text class="sty2">4896</text></text>
+ <text class="section-subtitle">《计算机工程系》<text class="sty2">4235</text></text>
+ <text class="section-subtitle">《人文艺术系》<text class="sty2">3178</text></text>
+ <text class="section-subtitle">《信息工程系》<text class="sty2">3106</text></text>
+ <text class="section-subtitle">
+ <text class="sty7">年年岁岁花相似</text></text>
+ <text class="section-subtitle">
+ <text class="sty8">岁岁年年人不同</text></text>
+ </view>
+ <!-- tab5 -->
+ <view class="section section05 {{scrollindex==4?'active':''}}" style="background: #9966FF;">
+ <text class="section-maintitle">个人<text class="sty6">榜单</text>-<text class="sty5">独</text>领风骚</text>
+ <text class="section-subtitle"><text class="sty2">211903344</text>庄**</text>
+ <text class="section-subtitle"><text class="sty2">211917238</text>曾*</text>
+ <text class="section-subtitle"><text class="sty2">211908202</text>陈**</text>
+ <text class="section-subtitle"><text class="sty2">211906160</text>褚**</text>
+ <text class="section-subtitle"><text class="sty2">211912101</text>陈**</text>
+ <text class="section-subtitle"><text class="sty2">211914321</text>林**</text>
+ <text class="section-subtitle"><text decode="true" class="sty9">&emsp;当夜深人静时，星河辽阔，
+ 世间万物会悄然变回它们原本的样子</text></text>
+ </view>
+ <!-- tab6 -->
+ <view class="section section06 {{scrollindex==5?'active':''}}" style="background: #3399FF;">
+ <text class="section-maintitle">满天星河意无穷</text>
+ <text class="section-subtitle">学习是一种<text class="sty5">信仰</text></text>
+ <text class="section-subtitle"><text class="sty6">阅读</text>让生活充实</text>
+ <text class="section-subtitle">怀抱一书，沉坐观自然风雨变换</text>
+ <text class="section-subtitle">悟人生诡秘莫测</text>
+ <text class="section-subtitle"><text class="sty9">生活不仅眼前的苟且，亦有诗和远方</text></text>
+ <text class="section-subtitle"><text class="sty10">——至诚图书馆</text></text>
+ <view class="closeBtn" bindtap="closeBtn">收起账单</view>
+ </view>
+ <!-- tab7 -->
+ <view class="section section06 {{scrollindex==5?'active':''}}" style="background: #3399FF;">
+ <text class="section-maintitle">页面6</text>
+ <text class="section-subtitle">我的页面”6</text>
+ </view>
+ </view>
+</view>

@@ -76,6 +76,10 @@
         <view class="info-wrap"><view class="info-key">
         系别: </view><text>经济管理系</text></view>
     </view>
+    <!-- 
+    <view class="info-wrap"><view class="info-key">
+        年龄: </view><text>{{stuAge}}</text></view>
+     -->
 </view>
 
 <!-- 自定义弹窗 -->

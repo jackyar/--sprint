@@ -1,5 +1,6 @@
 <!--pages/show4/show4.wxml-->
 <view class="container">
+    <!-- <button bindtap="test"></button> -->
   <view wx:if='{{image}}' style="background-image:url({{image}})" class="content">
     <!-- <button bindtap="test"></button> -->
   </view>

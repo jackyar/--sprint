@@ -8,6 +8,8 @@ cloud.init({
 
 const db = cloud.database()
 // 云函数入口函数
+
+//产品经理已经跑路了，我也不晓得要优化什么
 exports.main = async (event, context) => {
   return db.collection('image').get()
 }

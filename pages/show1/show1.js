@@ -1,6 +1,8 @@
 // pages/show1/show1.js
 const app = getApp()
 
+//传说有个魔仙堡，有个女王不得了
+
 Page({
   onLoad(){
     var _this = this;
